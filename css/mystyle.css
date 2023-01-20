@@ -1,0 +1,916 @@
+/*font*/
+
+@import url(../font/webfontkit-hattori/stylesheet.css);
+
+
+/*css all screens*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'hattori_hanzolight', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a:link, a:visited {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/*CSS smartphone*/
+
+@media screen and (max-width:780px) {
+
+    body {
+        background-color: rgb(49, 49, 49);
+        color: rgb(49, 49, 49);
+        
+    }
+
+  main {
+        width: 98%;
+        margin: auto;
+        background-color: white;overflow: hidden;
+    }
+
+    input#mn {
+        display: none;
+    }
+
+    label[for="mn"] {
+        border-radius: 10px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5em;
+        line-height: 27px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.24);
+        color: white;
+        top: 2.5%;
+        left: 4%;
+        z-index: 9999;
+        transition: ease-in-out all 0.4s;
+    }
+
+    label[for="mn"] span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    label[for="mn"]:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    ul {
+        padding-top: 30px;
+        width: 20%;
+        height: 50%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -20%;
+        z-index: 999;
+        transition: all .4s ease-in-out;
+    }
+
+    input:checked+label {
+        top: 0;
+        left: 0;
+        transition: all ease-in-out 0.4s;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(49, 49, 49);
+    }
+
+    input:checked+label:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    ul li {
+        width: 100%;
+        height: 14.285%;
+        position: relative;
+    }
+
+    ul li a:link, ul li a:visited {
+        color: rgb(49, 49, 49);
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    ul li a:hover label {
+        color: white;
+    }
+
+    ul li a:hover {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        transition: all .4s ease-in-out;
+    }
+
+    ul li a:link span {
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    ul li a:link:hover span {
+        font-size: 1.3em;
+    }
+
+    input:checked+label+ul {
+        left: 0;
+    }
+
+    img#logo {
+        position: absolute;
+        top: 1%;
+        right: 10px;
+        width: 20%;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+
+    /*Header*/
+
+    header div#header {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /*contenue*/
+
+    section#services {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    section#services div {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 10px;
+        border-bottom: solid 2px rgb(49, 49, 49);
+    }
+
+    section#services div:last-child {
+        border-bottom: none;
+    }
+
+    section#services div img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    section#services div h4 {
+        text-decoration: underline;
+        color: black;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    section#services div p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    section#services div.trois p {
+        margin-bottom: 0;
+    }
+
+
+    section#services div h4 strong {
+        color: rgb(104, 17, 29);
+    }
+
+    section#services div h4 span {
+        text-decoration: underline;
+        text-decoration-color: rgb(83, 6, 15);
+        text-underline-position: below;
+    }
+
+    /*teacher*/
+
+    section#teacher {
+        background-color: rgb(49, 49, 49);
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+
+    section#teacher div {
+        float: left;
+        width: 50%;
+        height: 80%;
+        border-radius: 5px;
+    }
+
+    section#teacher div#imgteacher img {
+        padding-top: 10px;
+        width: 150px;
+        height: 120px;
+        border-radius: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+
+    section#teacher div li {
+        position: relative;
+        left: 35%;        
+        color: black;
+        text-align: left;
+        width: 70%;
+        list-style-type: disc;
+    }
+
+    section#teacher div#text p {
+        color: black;
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 40px;
+        max-width: 280px;
+        text-align: justify;
+    }
+
+    section#teacher div#text {
+        padding-top: 10px;
+    }
+
+    /*MANQUE PHOTO ET <p>*/
+
+    /*classes*/
+
+    section#classes {
+        position: relative;
+        width: 100%;
+        height: 870px;
+    }
+
+
+    h2 {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        border: solid black 2px;
+        border-radius: 5px;
+        width: 65%;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: black;
+        color: white;
+    }
+
+    section#classes h2 {
+        margin-bottom: 30px;
+    }
+
+    section#classes div {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: white;
+        padding: 10px;
+    }
+
+    section#classes div img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    section#classes div h4 {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100px;
+        height: 40px;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+    }
+
+    section#classes div p {
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 150px;
+        height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    section#classes div p span {
+        color: rgb(104,17, 29);
+    }
+
+    section#classes div p img {
+        width: 20%;
+        height: auto;
+    }
+
+
+    /*studio*/
+
+    section#studio {
+        background-color: rgb(49, 49, 49);
+        padding-bottom: 20px;
+    }
+    
+    section#studio div#studiosortie {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /*materiel*/
+
+    section#materiel {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    section#materiel h2 {
+        margin: auto;
+        border: solid black 2px;
+        border-radius: 10px;
+        width: 95%;
+        text-align: center;
+    }
+
+
+    section#materiel div img {
+        width: 25%;
+        height: 110px;
+        margin-left: 6.25%;
+        margin-top: 20px;
+        float: left;
+    }
+
+
+
+    /*contact*/
+
+    section#contact {
+        background-image: url(../img/fundo3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+    }
+
+    section#contact div {
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-bottom: 20px;
+    }
+
+    section#contact h4 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    section#contact h5 {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: black;
+    }
+
+    section#contact p {
+        font-size: .7em;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    section#contact h4 a:visited,     section#contact h4 a:link {
+        color: white;
+    }
+
+    section#contact p a:link,     section#contact p a:visited {
+        color: blue;
+    }
+
+    section#contact::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    section#contact iframe {
+        width: 100%;
+        height: 70%;
+    }
+
+    /*footer*/
+
+    footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: .5em;
+    }
+
+}
+
+@media screen and (min-width:781px) {
+
+
+    html {
+        background-color: white;
+    }
+
+    body {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        background-color: rgb(49, 49, 49);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+        background-repeat: repeat-y;
+    }
+
+    main {
+        background-color: white;
+        max-width: 1200px;
+        width: 98%;
+        height: 100%;
+        margin: auto;
+    }
+
+    p { 
+        font-size: 1.3em;
+    }
+    
+    img#logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 15%;
+        height: 80px;
+        border-radius: 15px;
+        z-index: 999;
+    }
+
+
+    label[for="mn"], input#mn {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+
+    header div img {
+        width: 100%;
+        float: left;
+    }
+
+    /*menu*/
+
+    ul {
+        position: absolute;
+        top: 40px;
+        right: 1%;
+        width: 80%;
+        height: 40px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+    }
+
+    ul li {
+        float: left;
+        display: block;
+        width: 14.285%;
+        font-size: 1.2em;
+    }
+
+    ul li a:visited, ul li a:link {
+        color: white;
+        font-size: .8em;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.24);
+        color: goldenrod;
+    }
+
+    /*contenue*/
+
+    section#services {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    section#services div {
+        float: left;
+        position: relative;
+        top: 45%;
+        width: 30%;
+        height: 130px;
+        margin: auto;
+        margin-left: 2.5%;
+        text-align: center; 
+        padding: 10px;
+        color: rgb(49, 49, 49);
+        font-size: 1.3em;
+    }
+
+    section#services div img {
+        width: 75px;
+        height: auto;
+        position: absolute;
+        display: block;
+        top: -70%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    section#services div p {
+        display: none;
+        transition: all ease-in-out 0.4s;
+        font-size: 1em;
+    }
+
+    section#services div:hover h4 {
+        display: none;
+    }
+
+    section#services div:hover p {
+        display: inline;
+        transition: ease-in-out all 0.4s;
+    }
+
+    section#services div:hover {
+        border: solid rgb(49, 49, 49) 2px;
+        border-radius: 5px;
+    }
+
+
+    section#services div strong {
+        color: goldenrod;
+    }
+
+    section#services div span {
+        text-decoration: underline;
+        text-decoration-color: goldenrod;
+    }
+
+    section#services div a:link, section#services div a:visited {
+        color: goldenrod;
+    }
+    /*teacher*/
+
+
+    section#teacher {
+        background-color: rgb(49, 49, 49);
+        margin-top: 20px;
+        width: 100%;
+        height: 420px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    section#teacher h2 {
+        position: relative;
+        border-radius: 5px;
+    }
+
+    section#teacher div {
+        float: left;
+        width: 40%;
+        height: 80%;
+        margin-left: 6.666%;
+        border-radius: 5px;
+    }
+
+    section#teacher div#imgteacher img {
+        width: 150px;
+        height: auto;
+        border-radius: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+
+    section#teacher div li {
+        position: relative;
+        left: 35%;        
+        color: black;
+        text-align: left;
+        width: 70%;
+        list-style-type: disc;
+    }
+
+    section#teacher div#text p {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 40px;
+        max-width: 280px;
+        text-align: justify;
+    }
+
+    /*classes*/
+    
+    h2 {
+        border: solid 2px black;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        background-color: black;
+        color: white;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 1.8em;
+    }
+
+    section#classes {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+        position: relative;    
+    }
+
+    section#classes h2 {
+        position: relative;
+        border-radius: 5px;
+    }
+
+    section#classes h4 {
+        color: goldenrod;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 9999;
+        font-size: 2em;
+    }
+
+    section#classes div {
+        float: left;
+        width: 30%;
+        height: 250px;
+        margin-left: 2.5%;
+
+    }
+
+    section#classes div img {
+        margin: auto;
+        width: 70%;
+        height: 150px;
+        z-index: 999;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 5px;
+    }
+
+    section#classes div.level1 {
+        position: relative;
+    }
+
+    section#classes div.level2 {
+        position: relative;
+    }
+
+    section#classes div.level3 {
+        position: relative;
+    }
+
+    section#classes div p {
+        position: absolute;
+        z-index: 0;
+        visibility: hidden;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 70%;
+        text-align: center;
+    }
+
+    section#classes div:hover p {
+        visibility: visible;
+        color: black;
+        z-index: 999;
+    }
+
+    section#classes div:hover h4 {
+        visibility: hidden;
+    }
+
+    section#classes div:hover > img {
+        opacity: 0.5;
+    }
+
+    section#classes div p span {
+        color: rgb(104,17, 29);
+        font-weight: normal;
+        font-size: 1.2em;
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+
+    section#classes div p img {
+        margin-top: 10px;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+    }
+
+    /*studio*/
+
+    section#studio {
+        background-color: rgb(49, 49, 49);
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;    
+    }
+
+    section#studio h2 {
+        position: relative;
+        top: 20px;
+    }
+
+    section#studio img {
+        width: 50%;
+        height: auto;
+    }
+
+
+    /*materiel*/
+
+    section#materiel {
+        margin-top: 20px;
+        width: 100%;
+        height: 130px;
+        margin-bottom: 20px;
+        position: relative;    
+        overflow: hidden;
+    }
+
+    section#materiel div#materielsortie {
+        width: 300%;
+        height: 100%;
+        position: relative;
+        left: 0;
+    }
+
+
+    section#materiel img {
+        width: 10%;
+        height: 130px;
+        margin-left: 1%;
+        float: left;
+    }
+
+
+    /*contact*/
+
+    section#contact {
+        background-color: rgb(49, 49, 49);
+        padding-top: 20px;
+        background-image: url(../img/fundo3.jpg);
+        background-size: cover;
+    }
+
+    section#contact p a:link, section#contact p a:visited {
+        color: blue;
+    }
+
+    section#contact a:link, section#contact a:visited {
+        color: white;
+    }
+
+    section#contact div {
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-bottom: 20px;
+    }
+
+    section#contact h4 {
+        color: white;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+
+    section#contact h5 {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    section#contact p {
+        font-size: .9em;
+        margin-bottom: 5px;
+    }
+
+    section#contact::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    section#contact iframe {
+        width: 100%;
+        height: 70%;
+    }
+
+    /*footer*/
+
+    footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: .6em;
+    }
+
+
+
+}
+
+
+    
+
+    

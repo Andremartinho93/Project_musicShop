@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <!--css parallax-->
+    <style>
+
+        /*routine*/
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /*parallax*/
+
+        .parallax-window {
+            height: 50%;
+            background: transparent;
+        }
+
+        .blanche {
+            height: 100px;
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- 3 contenue du parallax-->
+    <div    class="parallax-window" 
+            data-parallax="scroll" 
+            data-image-src="images/grandesPhotos/berlin.jpg">
+    </div>
+
+    <div    class="blanche">
+
+    </div>
+
+    <div    class="parallax-window" 
+            data-parallax="scroll" 
+            data-image-src="images/grandesPhotos/dallas.jpg"
+            data-speed="0.5">
+    </div>
+    
+    <div    class="blanche">
+
+    </div>
+
+    <div    class="parallax-window" 
+            data-parallax="scroll" 
+            data-image-src="images/grandesPhotos/paris.jpg">
+    </div>
+
+
+    <!-- 1 jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- 2 plugin parallax-->
+    <script src="parallax.js"></script>
+
+</body>
+</html>

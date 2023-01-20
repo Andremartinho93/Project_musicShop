@@ -1,0 +1,41 @@
+[
+	{
+	"nom": "Gibson Les Paul 60's",
+    "type": "Guitare",
+	"photo": "../img/lespaul.png"
+	}, 
+	{
+	"nom": "Fender Telecaster Honey Burst",
+    "type": "Guitare",
+	"photo": "../img/telecaster.jpg"
+	},
+	{
+	"nom": "AKG C414 XLS",
+    "type": "Microphone",
+    "photo": "../img/akg.jpg"
+	}, 
+	{
+	"nom": "Lewitt LCT 540",
+    "type": "Microphone",
+	"photo": "../img/lewitt.jpg"
+	},
+	{
+	"nom": "Shure SM58",
+    "type": "Microphone",
+	"photo": "../img/shure.jpg"
+	},
+	{
+	"nom": "Allen & Heath GSR24-M",
+    "type": "SoundCard",
+	"photo": "../img/allen.jpg"
+	},
+	{
+	"nom": "Martin D-28 Modern Deluxe",
+    "type": "Guitare",
+	"photo": "../img/martin.jpg"
+	},
+	{
+	"nom": "New York",
+	"photo": "newyork.jpg"
+	}
+]
